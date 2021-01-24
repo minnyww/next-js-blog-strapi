@@ -16,10 +16,11 @@ export default function Home({ blogItems }) {
                               <div className="main-image">
                                  <Image
                                     src={
-                                       // process.env.NODE_ENV === "production"
-                                       //    ? `https://strapi-x39d.onrender.com/uploads/${item?.image?.name}`
-                                       //    :
-                                       item?.image?.name
+                                       item?.image?.name.includes(
+                                          "images.unsplash.com",
+                                       )
+                                          ? item.image.name
+                                          : `https://strapi-x39d.onrender.com/uploads/${item?.image?.name}`
                                     }
                                     width={600}
                                     height={400}
