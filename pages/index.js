@@ -20,7 +20,7 @@ export default function Home({ blogItems }) {
                                           "images.unsplash.com",
                                        )
                                           ? item.image.name
-                                          : `https://strapi-x39d.onrender.com/uploads/${item?.image?.name}`
+                                          : `https://strapi-x39d.onrender.com/${item?.image?.url}`
                                     }
                                     width={600}
                                     height={400}
