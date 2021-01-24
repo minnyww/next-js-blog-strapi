@@ -20,7 +20,7 @@ export default function Home({ blogItems }) {
                                  height={400}
                                  alt={item?.Headline}
                               />
-                              <h3>{item?.Headline}></h3>
+                              <h3>{item?.Headline}</h3>
                            </div>
                         </Link>
                      </div>
