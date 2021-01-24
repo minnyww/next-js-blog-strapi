@@ -1,7 +1,7 @@
 import Navbar from "./shared/Navbar";
 
 const Layout = ({ children }) => (
-   <div>
+   <div className="container-sm">
       <Navbar />
       {children}
    </div>
