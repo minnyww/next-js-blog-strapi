@@ -1,5 +1,5 @@
-import Layout from "../components/Layout";
-import fetchFromCMS from "../lib/services";
+import Layout from "../../components/Layout";
+import fetchFromCMS from "../../lib/services";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 const BlogsItem = ({ blogs }) => {
@@ -18,7 +18,7 @@ const BlogsItem = ({ blogs }) => {
                   <div className="portfolio-headline text-center m-2">
                      <h1>{blogs?.Headline}</h1>
                   </div>
-                  <ReactMarkdown source={blogs.content} escapeHtml={false} />
+                  <ReactMarkdown source={blogs?.content} escapeHtml={false} />
                </div>
             </div>
          </div>

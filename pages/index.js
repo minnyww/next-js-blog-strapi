@@ -1,5 +1,5 @@
-import Layout from "./components/Layout";
-import fetchFromCMS from "./lib/services";
+import Layout from "../components/Layout";
+import fetchFromCMS from "../lib/services";
 import Image from "next/image";
 import Link from "next/link";
 
