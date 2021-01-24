@@ -15,7 +15,11 @@ export default function Home({ blogItems }) {
                         <Link as={`/blogs/${item.slug}`} href="/blogs/[id]">
                            <div className="main-image">
                               <Image
-                                 src={item?.image?.name}
+                                 src={
+                                    process.env.NODE_ENV === "production"
+                                       ? `https://strapi-x39d.onrender.com/uploads/${item?.image?.name}`
+                                       : item?.image?.name
+                                 }
                                  width={600}
                                  height={400}
                                  alt={item?.Headline}
