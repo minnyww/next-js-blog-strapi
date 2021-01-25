@@ -26,10 +26,7 @@ const Blogs = ({ blogItems }) => {
                            />
 
                            <div className="card-body">
-                              <p className="card-text">
-                                 Quick sample text to create the card title and
-                                 make up the body of the card's content.
-                              </p>
+                              <h4>{item.Headline}</h4>
                            </div>
                         </div>
                      </Link>
