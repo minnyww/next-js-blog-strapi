@@ -9,7 +9,15 @@ const BlogsItem = ({ blogs }) => {
          <div className="row">
             <div className="portfolio-image text-center mb-4">
                <div className="col-md-12">
-                  <Image src={blogs?.image?.name} width={1000} height={500} />
+                  <Image
+                     src={
+                        item?.image?.name.includes("images.unsplash.com")
+                           ? item.image.name
+                           : `https://strapi-x39d.onrender.com/${item?.image?.url}`
+                     }
+                     width={1000}
+                     height={500}
+                  />
                </div>
             </div>
          </div>
