@@ -11,9 +11,9 @@ const BlogsItem = ({ blogs }) => {
                <div className="col-md-12">
                   <Image
                      src={
-                        item?.image?.name.includes("images.unsplash.com")
-                           ? item.image.name
-                           : `https://strapi-x39d.onrender.com/${item?.image?.url}`
+                        blogs?.image?.name.includes("images.unsplash.com")
+                           ? blogs.image.name
+                           : `https://strapi-x39d.onrender.com/${blogs?.image?.url}`
                      }
                      width={1000}
                      height={500}
