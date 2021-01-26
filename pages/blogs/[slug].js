@@ -3,6 +3,7 @@ import fetchFromCMS from "../../lib/services";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 const BlogsItem = ({ blogs }) => {
+   console.log("blogs : ", blogs);
    return (
       <Layout>
          <div className="row">
