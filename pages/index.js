@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 export default function Home() {
    return (
       <Layout>
-         {/* <Head></Head> */}
          <div className="container-sm">
             <div style={{ margin: "18px" }}>
                <h4>Hi there, I'm Apisit Amnuayworrabut</h4>
